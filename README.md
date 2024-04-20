@@ -11,4 +11,6 @@
 
 ## Activity Diagram
 
-![Activity Diagram](/src/assets/docs/activityDiagram.png)
+![buy-arch drawio-2](https://github.com/Kent0810/general-ticket-box-fe/assets/78617105/9558e7b4-5db3-43b8-b94b-6b5947ab6ba1)
+
+![seller-arch drawio](https://github.com/Kent0810/general-ticket-box-fe/assets/78617105/9905caa5-c2a5-40b1-915d-e87bd16dc866)
