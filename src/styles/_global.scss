@@ -1,0 +1,74 @@
+@use "./variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@import "react-toastify/dist/ReactToastify.css";
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/effect-fade";
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif !important;
+}
+
+p,
+div,
+span,
+small,
+label {
+  font-family: "Barlow", sans-serif !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+
+  /* Track */
+  &-track {
+    background: $neutral-300;
+  }
+
+  /* Handle */
+  &-thumb {
+    background: $neutral-500;
+    border-radius: 20px;
+
+    /* Handle on hover */
+    &:hover {
+      background: $neutral-600;
+    }
+  }
+}
+
+input {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

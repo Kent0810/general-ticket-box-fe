@@ -1,0 +1,23 @@
+@use "styles/index" as *;
+
+.account {
+  padding: 50px 0 40px;
+  min-height: calc(100vh - 480px);
+
+  h1 {
+    font-size: 48px;
+    color: $info-750;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    svg {
+      font-size: 48px;
+    }
+  }
+}

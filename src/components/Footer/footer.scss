@@ -1,0 +1,45 @@
+@use "styles/index" as *;
+
+footer {
+  height: 400px;
+  background-color: $info-700;
+  color: white;
+  padding: 60px 0 30px !important;
+
+  .footer {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-section {
+      p {
+        color: white;
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        li {
+          color: $neutral-300;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-footnote {
+      text-align: center;
+      margin-top: auto;
+
+      small {
+        font-size: 13px;
+      }
+    }
+  }
+}

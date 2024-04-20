@@ -1,0 +1,43 @@
+@use "styles/index" as *;
+
+.wasvalidated {
+  .cinput {
+    &-valid {
+      fieldset.MuiOutlinedInput-notchedOutline {
+        border: 1px solid $success-500;
+        border-radius: 4px;
+      }
+    }
+
+    &-invalid {
+      fieldset {
+        border: 1px solid $danger-500;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .form-helper-text {
+    display: inline-block;
+    color: $danger-500;
+    font-size: 13px;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+  }
+}
+
+.customInput {
+  &.validate-input {
+    &.customInput-invalid {
+      .MuiFormLabel-root {
+        color: $danger-500;
+      }
+
+      fieldset.MuiOutlinedInput-notchedOutline {
+        border: 1px solid $danger-500;
+        border-radius: 4px;
+      }
+    }
+  }
+}

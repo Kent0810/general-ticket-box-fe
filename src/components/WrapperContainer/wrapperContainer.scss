@@ -1,0 +1,22 @@
+@use "styles/index" as *;
+
+.container {
+  height: 100%;
+
+  .wrapper-container {
+    padding: 0 70px;
+    height: 100%;
+
+    @include desktop {
+      padding: 0;
+    }
+
+    @include tablet {
+      padding: 0 12px;
+    }
+
+    @include mobile {
+      padding: 0 4px;
+    }
+  }
+}

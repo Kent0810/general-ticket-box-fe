@@ -1,0 +1,83 @@
+@use "styles/index" as *;
+
+.auth-content {
+  padding: 40px 24px;
+
+  h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .auth-form {
+    max-width: 500px;
+    margin: 0 auto;
+
+    &__group {
+      width: 100%;
+      position: relative;
+
+      label {
+        position: relative;
+        top: -25px;
+        left: auto;
+        color: $info-700;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 8px;
+      }
+
+      .show-password {
+        position: absolute;
+        top: 20%;
+        right: 15px;
+        cursor: pointer;
+      }
+    }
+
+    &__support {
+      .save-account {
+        span {
+          @include for-mobile-down {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    &__button {
+      position: relative;
+
+      button {
+        background-color: $info-600;
+      }
+
+      .button-svg {
+        position: absolute;
+        right: 10px;
+        top: 3px;
+        transform: translateY(50%);
+        pointer-events: none;
+
+        svg {
+          fill: $neutral-500;
+        }
+      }
+    }
+
+    .auth-variant {
+      color: $info-700;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @include for-mobile-down {
+        font-size: 13px;
+      }
+    }
+  }
+}
