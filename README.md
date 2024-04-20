@@ -1,4 +1,4 @@
-# FLight Booking Frontend
+# General Ticket Frontend
 
 ## How to run the application?
 
